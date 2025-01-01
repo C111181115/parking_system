@@ -1,4 +1,5 @@
 <?php
+ob_start(); // 開始輸出緩衝
 session_start();
 require_once 'database.php';
 
@@ -36,6 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 }
+
+ob_end_flush(); // 發送緩衝區的內容並關閉緩衝
 ?>
 
 <!DOCTYPE html>
