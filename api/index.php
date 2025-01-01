@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'config/database.php';
+require_once 'database.php';
 
 // 檢查是否已提交表單
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

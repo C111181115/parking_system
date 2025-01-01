@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'config/database.php';
+require_once 'database.php';
 
 // 檢查是否有費用信息
 if (!isset($_SESSION['parking_fee'])) {

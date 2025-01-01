@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'config/database.php';
+require_once 'database.php';
 
 // 检查用户是否已登录
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
