@@ -1,8 +1,8 @@
 <?php
-$host = '13.54.4.168'; // 資料庫主機
-$username = 'root'; // 資料庫用戶名
-$password = 'root'; // 資料庫密碼
-$dbname = 'parking_2025'; // 資料庫名稱
+$host = getenv('DB_SERVER');; // 資料庫伺服器
+$username = getenv('DB_USERNAME');;        // 資料庫用戶名
+$password = getenv('DB_PASSWORD');;            // 資料庫密碼
+$dbname = getenv('DB_NAME');;  // 資料庫名稱
 
 // 創建資料庫連接
 $conn = new mysqli($host, $username, $password, $dbname);
